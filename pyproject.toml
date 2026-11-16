@@ -3,9 +3,9 @@ requires = ["setuptools>=77", "wheel==0.45.1"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "llm-complexity-nvidia"
-version = "0.1.0"
-description = "LLM Complexity with NVIDIA NIM — small-scale reproducible companion"
+name = "reasoning-stress-lab"
+version = "0.1.2"
+description = "Reasoning Stress Lab with NVIDIA NIM — small-scale reproducible companion"
 requires-python = ">=3.11"
 license = "Apache-2.0"
 license-files = ["LICENSE", "NOTICE"]
@@ -18,6 +18,7 @@ tokenizer = ["tokenizers==0.22.1", "huggingface-hub==0.35.3"]
 legal = ["jieba==0.42.1", "rouge-score==0.1.2", "datasets==4.1.1"]
 
 [project.scripts]
+reasoning-stress-lab = "project_demo.__main__:main"
 llm-complexity-nvidia = "project_demo.__main__:main"
 
 [tool.setuptools.packages.find]

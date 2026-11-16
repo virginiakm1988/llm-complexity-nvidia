@@ -1,4 +1,4 @@
-# LLM Complexity minimum demo playbook
+# Reasoning Stress Lab minimum demo playbook
 
 **Audience:** research engineers and academic collaborators. **Goal:** run the core intervention and inspect reproducible evidence, not reproduce full-paper headline scores.
 

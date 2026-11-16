@@ -1,4 +1,4 @@
-# LLM Complexity：繁中快速入門
+# Reasoning Stress Lab：繁中快速入門
 
 本專案提供可重跑的 NVIDIA SDK 示範、互動 Colab 與評估流程。先讀 [英文 README](README.md) 中的論文／原始碼來源與方法差異。
 

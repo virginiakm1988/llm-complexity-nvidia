@@ -1,4 +1,4 @@
-# LLM Complexity with NVIDIA SDKs
+# Reasoning Stress Lab with NVIDIA SDKs
 
 Measure how algorithmic difficulty and input length independently affect NVIDIA NIM responses. Three tasks have exact Python oracles: pointer chasing, modular arithmetic, and type-matched brackets.
 
@@ -29,8 +29,8 @@ The default hosted model is `nvidia/nemotron-3.5-lightning-30b-a3b`. Endpoint av
 
 ## Interactive tutorials
 
-- [Quickstart in Colab](https://colab.research.google.com/github/virginiakm1988/llm-complexity-nvidia/blob/main/notebooks/01_quickstart.ipynb)
-- [Evaluation in Colab](https://colab.research.google.com/github/virginiakm1988/llm-complexity-nvidia/blob/main/notebooks/02_evaluation.ipynb)
+- [Quickstart in Colab](https://colab.research.google.com/github/virginiakm1988/reasoning-stress-lab/blob/main/notebooks/01_quickstart.ipynb)
+- [Evaluation in Colab](https://colab.research.google.com/github/virginiakm1988/reasoning-stress-lab/blob/main/notebooks/02_evaluation.ipynb)
 - [English playbook](docs/playbook.md) · [繁體中文快速入門](README.zh-TW.md)
 
 ## NVIDIA integration and reuse
