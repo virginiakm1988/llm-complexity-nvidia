@@ -1,0 +1,79 @@
+{
+  "data_designer": {
+    "columns": [
+      {
+        "name": "generated",
+        "drop": false,
+        "column_type": "llm-structured",
+        "skip": null,
+        "propagate_skip": true,
+        "prompt": "Produce a short {{ style }} sentence that asks a reader to solve a supplied task and return JSON. The sentence must contain {TASK} exactly once. Example template: Solve {TASK} and return JSON with an answer field. Write only the requested sentence as the template value, not these generation instructions. Do not solve a task or mention placeholders, templates, schemas or code fences inside the template value. Return the requested object inside a fenced JSON block (```json followed by the object and closing ```), matching the supplied JSON schema.",
+        "model_alias": "template-writer",
+        "system_prompt": null,
+        "multi_modal_context": null,
+        "tool_alias": null,
+        "with_trace": "none",
+        "extract_reasoning_content": false,
+        "output_format": {
+          "type": "object",
+          "properties": {
+            "template": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "template"
+          ],
+          "additionalProperties": false
+        }
+      },
+      {
+        "name": "record_id",
+        "drop": false,
+        "column_type": "seed-dataset",
+        "skip": null,
+        "propagate_skip": true
+      },
+      {
+        "name": "style",
+        "drop": false,
+        "column_type": "seed-dataset",
+        "skip": null,
+        "propagate_skip": true
+      }
+    ],
+    "model_configs": [
+      {
+        "alias": "template-writer",
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "inference_parameters": {
+          "generation_type": "chat-completion",
+          "max_parallel_requests": 1,
+          "timeout": 90,
+          "extra_body": {
+            "chat_template_kwargs": {
+              "enable_thinking": false
+            }
+          },
+          "temperature": 0.7,
+          "top_p": null,
+          "max_tokens": 512
+        },
+        "provider": "nvidia",
+        "skip_health_check": true
+      }
+    ],
+    "tool_configs": [],
+    "seed_config": {
+      "source": {
+        "seed_type": "df"
+      },
+      "sampling_strategy": "ordered",
+      "selection_strategy": null
+    },
+    "constraints": null,
+    "profilers": null,
+    "processors": null
+  },
+  "library_version": "0.9.3"
+}

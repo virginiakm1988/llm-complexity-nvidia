@@ -1,0 +1,199 @@
+{
+  "conditions": [
+    {
+      "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "thinking": false,
+      "task": "arithmetic",
+      "difficulty": 1,
+      "length": 1024,
+      "n": 1,
+      "correct": 1,
+      "accuracy": 1.0,
+      "wilson95": [
+        0.20654329147389294,
+        1
+      ],
+      "mean_seconds": 0.46887550014071167,
+      "errors": 0
+    },
+    {
+      "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "thinking": false,
+      "task": "arithmetic",
+      "difficulty": 1,
+      "length": 2048,
+      "n": 1,
+      "correct": 1,
+      "accuracy": 1.0,
+      "wilson95": [
+        0.20654329147389294,
+        1
+      ],
+      "mean_seconds": 0.46182770002633333,
+      "errors": 0
+    },
+    {
+      "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "thinking": false,
+      "task": "arithmetic",
+      "difficulty": 5,
+      "length": 1024,
+      "n": 1,
+      "correct": 0,
+      "accuracy": 0.0,
+      "wilson95": [
+        0,
+        0.7934567085261071
+      ],
+      "mean_seconds": 0.4701253999955952,
+      "errors": 0
+    },
+    {
+      "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "thinking": false,
+      "task": "arithmetic",
+      "difficulty": 5,
+      "length": 2048,
+      "n": 1,
+      "correct": 0,
+      "accuracy": 0.0,
+      "wilson95": [
+        0,
+        0.7934567085261071
+      ],
+      "mean_seconds": 0.5401657000184059,
+      "errors": 0
+    },
+    {
+      "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "thinking": false,
+      "task": "brackets",
+      "difficulty": 1,
+      "length": 1024,
+      "n": 1,
+      "correct": 1,
+      "accuracy": 1.0,
+      "wilson95": [
+        0.20654329147389294,
+        1
+      ],
+      "mean_seconds": 0.437999099958688,
+      "errors": 0
+    },
+    {
+      "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "thinking": false,
+      "task": "brackets",
+      "difficulty": 1,
+      "length": 2048,
+      "n": 1,
+      "correct": 1,
+      "accuracy": 1.0,
+      "wilson95": [
+        0.20654329147389294,
+        1
+      ],
+      "mean_seconds": 0.473764699883759,
+      "errors": 0
+    },
+    {
+      "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "thinking": false,
+      "task": "brackets",
+      "difficulty": 5,
+      "length": 1024,
+      "n": 1,
+      "correct": 1,
+      "accuracy": 1.0,
+      "wilson95": [
+        0.20654329147389294,
+        1
+      ],
+      "mean_seconds": 0.42645630007609725,
+      "errors": 0
+    },
+    {
+      "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "thinking": false,
+      "task": "brackets",
+      "difficulty": 5,
+      "length": 2048,
+      "n": 1,
+      "correct": 1,
+      "accuracy": 1.0,
+      "wilson95": [
+        0.20654329147389294,
+        1
+      ],
+      "mean_seconds": 0.4820367000065744,
+      "errors": 0
+    },
+    {
+      "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "thinking": false,
+      "task": "pointer",
+      "difficulty": 1,
+      "length": 1024,
+      "n": 1,
+      "correct": 1,
+      "accuracy": 1.0,
+      "wilson95": [
+        0.20654329147389294,
+        1
+      ],
+      "mean_seconds": 0.52572220005095,
+      "errors": 0
+    },
+    {
+      "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "thinking": false,
+      "task": "pointer",
+      "difficulty": 1,
+      "length": 2048,
+      "n": 1,
+      "correct": 1,
+      "accuracy": 1.0,
+      "wilson95": [
+        0.20654329147389294,
+        1
+      ],
+      "mean_seconds": 0.48300110013224185,
+      "errors": 0
+    },
+    {
+      "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "thinking": false,
+      "task": "pointer",
+      "difficulty": 5,
+      "length": 1024,
+      "n": 1,
+      "correct": 0,
+      "accuracy": 0.0,
+      "wilson95": [
+        0,
+        0.7934567085261071
+      ],
+      "mean_seconds": 0.4702983000315726,
+      "errors": 0
+    },
+    {
+      "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "thinking": false,
+      "task": "pointer",
+      "difficulty": 5,
+      "length": 2048,
+      "n": 1,
+      "correct": 0,
+      "accuracy": 0.0,
+      "wilson95": [
+        0,
+        0.7934567085261071
+      ],
+      "mean_seconds": 0.45464279991574585,
+      "errors": 0
+    }
+  ],
+  "n_predictions": 12,
+  "interpretation": "Fixture scores validate the oracle and harness only. Live metrics estimate task performance; they are not a complexity-theoretic lower bound.",
+  "result_kind": "actual_nim_calls"
+}

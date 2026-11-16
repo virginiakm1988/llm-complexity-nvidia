@@ -1,0 +1,6 @@
+{
+  "reviewer": "independent speech/vision implementation agent",
+  "tests_passed": 8,
+  "stdout": "",
+  "stderr": "test_bad_budget_rejected (test_project.ReasoningTests.test_bad_budget_rejected) ... ok\ntest_fixture_is_oracle_not_model (test_project.ReasoningTests.test_fixture_is_oracle_not_model) ... ok\ntest_nesting_and_display_length_independent (test_project.ReasoningTests.test_nesting_and_display_length_independent) ... ok\ntest_oracles (test_project.ReasoningTests.test_oracles) ... ok\ntest_paired_conditions_preserve_task (test_project.ReasoningTests.test_paired_conditions_preserve_task) ... ok\ntest_template_integrity (test_project.ReasoningTests.test_template_integrity) ... ok\ntest_confidence_interval (test_project.SharedTests.test_confidence_interval) ... ok\ntest_no_letter_mining (test_project.SharedTests.test_no_letter_mining) ... ok\n\n----------------------------------------------------------------------\nRan 8 tests in 0.001s\n\nOK\n"
+}

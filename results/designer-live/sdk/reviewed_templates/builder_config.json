@@ -1,0 +1,79 @@
+{
+  "data_designer": {
+    "columns": [
+      {
+        "name": "generated",
+        "drop": false,
+        "column_type": "llm-structured",
+        "skip": null,
+        "propagate_skip": true,
+        "prompt": "Write an English task wrapper in {{ style }} style containing the literal placeholder {TASK} exactly once. Tell the reader to solve that task and return a JSON object with the answer key. Do not supply any answer or add task constraints. Return the requested object inside a fenced JSON block (```json followed by the object and closing ```), matching the supplied JSON schema.",
+        "model_alias": "template-writer",
+        "system_prompt": null,
+        "multi_modal_context": null,
+        "tool_alias": null,
+        "with_trace": "none",
+        "extract_reasoning_content": false,
+        "output_format": {
+          "type": "object",
+          "properties": {
+            "template": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "template"
+          ],
+          "additionalProperties": false
+        }
+      },
+      {
+        "name": "record_id",
+        "drop": false,
+        "column_type": "seed-dataset",
+        "skip": null,
+        "propagate_skip": true
+      },
+      {
+        "name": "style",
+        "drop": false,
+        "column_type": "seed-dataset",
+        "skip": null,
+        "propagate_skip": true
+      }
+    ],
+    "model_configs": [
+      {
+        "alias": "template-writer",
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "inference_parameters": {
+          "generation_type": "chat-completion",
+          "max_parallel_requests": 1,
+          "timeout": 90,
+          "extra_body": {
+            "chat_template_kwargs": {
+              "enable_thinking": false
+            }
+          },
+          "temperature": 0.7,
+          "top_p": null,
+          "max_tokens": 512
+        },
+        "provider": "nvidia",
+        "skip_health_check": true
+      }
+    ],
+    "tool_configs": [],
+    "seed_config": {
+      "source": {
+        "seed_type": "df"
+      },
+      "sampling_strategy": "ordered",
+      "selection_strategy": null
+    },
+    "constraints": null,
+    "profilers": null,
+    "processors": null
+  },
+  "library_version": "0.9.3"
+}

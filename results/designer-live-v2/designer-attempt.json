@@ -1,0 +1,9 @@
+{
+  "kind": "paraphrase",
+  "mode": "live",
+  "status": "completed",
+  "sdk": "0.9.3",
+  "rows": 3,
+  "reserved_http_attempts": 12,
+  "note": "Reserved bound, not a measured count. Inspect SDK artifacts for actual attempts."
+}

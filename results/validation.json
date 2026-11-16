@@ -1,0 +1,18 @@
+{
+  "unit_test_returncode": 0,
+  "notebooks": [
+    {
+      "notebook": "01_quickstart.ipynb",
+      "status": "passed",
+      "executed_code_cells": 5,
+      "mode": "fixture"
+    },
+    {
+      "notebook": "02_evaluation.ipynb",
+      "status": "passed",
+      "executed_code_cells": 3,
+      "mode": "fixture"
+    }
+  ],
+  "tokenizer": "CPU preparation uses pinned current Lightning tokenizer; fixture notebooks use explicitly labeled character units."
+}

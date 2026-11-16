@@ -1,0 +1,13 @@
+test_bad_budget_rejected (test_project.ReasoningTests.test_bad_budget_rejected) ... ok
+test_fixture_is_oracle_not_model (test_project.ReasoningTests.test_fixture_is_oracle_not_model) ... ok
+test_nesting_and_display_length_independent (test_project.ReasoningTests.test_nesting_and_display_length_independent) ... ok
+test_oracles (test_project.ReasoningTests.test_oracles) ... ok
+test_paired_conditions_preserve_task (test_project.ReasoningTests.test_paired_conditions_preserve_task) ... ok
+test_template_integrity (test_project.ReasoningTests.test_template_integrity) ... ok
+test_confidence_interval (test_project.SharedTests.test_confidence_interval) ... ok
+test_no_letter_mining (test_project.SharedTests.test_no_letter_mining) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.002s
+
+OK
